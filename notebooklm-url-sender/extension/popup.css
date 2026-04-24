@@ -1,0 +1,51 @@
+body {
+  width: 360px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 12px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+section {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+#tabSelectionList {
+  max-height: 100px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 6px;
+}
+
+#statusArea {
+  background: #f6f6f6;
+  min-height: 44px;
+  white-space: pre-wrap;
+  padding: 8px;
+}
+
+select,
+input,
+button {
+  width: 100%;
+  margin-top: 6px;
+}

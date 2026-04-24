@@ -1,0 +1,9 @@
+{
+  "name": "com.example.notebooklm_sender",
+  "description": "NotebookLM URL sender native host",
+  "path": "C:\\Program Files\\NotebookLmUrlSender\\NotebookLmSender.Host.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://__EXTENSION_ID__/"
+  ]
+}
