@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NotebookLM URL Sender</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>NotebookLM URL Sender</h1>
+
+      <section>
+        <h2>Tab mode</h2>
+        <label><input type="radio" name="tabMode" value="current" checked /> Current tab</label>
+        <label><input type="radio" name="tabMode" value="selected" /> Select tabs</label>
+        <label><input type="radio" name="tabMode" value="all" /> All tabs in window</label>
+      </section>
+
+      <section id="tabSelectionSection" hidden>
+        <h2>Select tabs</h2>
+        <div id="tabSelectionList"></div>
+      </section>
+
+      <section>
+        <h2>Notebook target</h2>
+        <label><input type="radio" name="targetMode" value="existing" checked /> Existing notebook</label>
+        <label><input type="radio" name="targetMode" value="new" /> Create new notebook</label>
+
+        <div id="existingNotebookSection">
+          <select id="notebookPicker"></select>
+          <button id="refreshNotebooksBtn" type="button">Refresh notebooks</button>
+        </div>
+
+        <div id="newNotebookSection" hidden>
+          <input id="newNotebookName" type="text" placeholder="Notebook name" />
+        </div>
+      </section>
+
+      <button id="submitBtn" type="button">Send URL(s)</button>
+      <pre id="statusArea" aria-live="polite"></pre>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

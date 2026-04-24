@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "NotebookLM URL Sender",
+  "description": "Send current or selected tab URLs to NotebookLM via native host automation.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "NotebookLM URL Sender",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "nativeMessaging"
+  ]
+}
